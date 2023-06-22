@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <title>Document</title>
-</head>
-<body>
-<?php echo "hello word"; ?>
-</body>
-</html>
+<?php
+    $page = $_GET["page"];
+
+    if($page == 'cv'){
+        include 'cv.php';
+    }elseif ($page == 'hobbie'){
+        include 'hobbie.php';
+    }elseif ($page == 'contact'){
+        include 'contact.php';
+    }else{
+        include 'cv.php';
+    }
